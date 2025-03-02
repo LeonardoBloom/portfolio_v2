@@ -1,0 +1,1 @@
+Windows icons are traditionally 32x32. Starting in Windows 95, the icon in the window title and task bar was 16x16.
