@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Colaço</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="one-big-div">
+        <div class="topbar">
+            <div class="titlebar">
+                <div class="titlebar-left">
+                    <img id="icon" src="assets/icon.png">
+                    <h1 style="font-size: xx-large ;color: white; font-weight:200;">Leonardo Colaço, Inc.</h1>
+                </div>
+                <div class="titlebar-right">
+                    <div class="w-button w-min">
+                        
+                    </div>
+                    <div class="w-button w-max">
+    
+                    </div>
+                    <div class="w-button w-x">
+    
+                    </div>
+                    <!-- <img id="icon" src="assets/min.png">
+                    <img id="icon" src="assets/max.png">
+                    <img id="icon" src="assets/x.png"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="window-gap" style="background-color: #c0c4c8">
+            <div class="window-options">
+                <p><u>F</u>ile</p>
+                <p><u>E</u>dit</p>
+                <p><u>S</u>earch</p>
+                <p><u>H</u>elp</p>
+            </div>
+
+            <div class="animation-lever">
+                <label for="animation">
+                    <input type="checkbox" onchange="bkg_autoplay()" name="animation" id="animation">
+                    <span class="checkmark">
+                Play Animation</label>
+
+            </div>
+        </div>
+        
+        <div class="main-container">
+            <video id="bkg-video" autoplay muted loop src="./assets/Logoslide.mp4" >
+                
+            </video>
+            <div class="content-wrapper">
+                <div class="content">
+                    <!-- PAGE CONTENT GOES HERE-->
+
+                    
+                </div>
+                <div class="content">
+                    content 1
+                </div>
+
+            </div>
+            
+        </div>
+        <div style="width: 99%; margin: 0 auto; height:2px; background:#84888c"></div>
+    
+        <div class="footer">
+            <p>Made by Leonardo </p>
+    
+        </div>
+
+    </div>
+
+    
+</body>
+
+<script src="home.js"></script>
+</html>
