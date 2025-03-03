@@ -135,14 +135,22 @@
         transition: .2s ease;
     }
 
+    .tech {
+        width: 100%;
+        
+    }
 
 .tech-stack {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
 
+    
 
-    gap: 30px;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* gap: 50px; */
 } 
 
 .tech-stack img {
