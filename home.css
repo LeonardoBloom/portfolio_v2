@@ -3,10 +3,14 @@
     src: url('./assets/fonts/W95FA.otf')
 }
 
+html {
+    /* height: 100vw; */
+}
 
 html, body {
     overflow-x: hidden;
     width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -15,7 +19,7 @@ body {
     font-family: 'W95FA';
     overflow: hidden;
     overflow-x: hidden;
-    z-index: s;
+    /* z-index: s; */
 
     height: 100%;
 }
