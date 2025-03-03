@@ -1,0 +1,174 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1500;
+    /* align-items: center; */
+    
+}
+
+.intro img {
+    width: 200px;
+}
+
+.intro-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 250px;
+}
+
+
+.div-split {
+    background-color: aliceblue;
+    height: 5px;
+}
+
+
+
+.hello {
+    text-align: center;
+    /* width: 80%; */
+    margin: 0px auto;
+    
+    
+}
+
+.hello h3 {
+    line-height: 5px;
+    font-weight:;
+}
+
+.welcome {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 10px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.welcome img {
+    /* width: 360px; */
+    margin: 30px auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#welcome-text {
+    
+    width: 360px;
+    height: auto;
+    overflow: auto;
+    /* padding: 0 0px; */
+}
+#thunder {
+    width: 85px;
+    height: auto;
+}
+
+.intro * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.intro-profile {
+    width: 100%;
+}
+
+.profile {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    /* gap: 100px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    row-gap: 0;
+}
+.profile-pic {
+    position: relative;
+    z-index: 20;
+}
+.profile-pic #window {
+    background-color: aliceblue;
+    
+    top:0;
+    left: -230px;
+    width: 400px;
+    object-fit: contain;
+    z-index: 5;
+}
+
+.profile-pic #pfp {
+    position: absolute;
+    width: 370px;
+    left: 10px;
+    top: -30px;
+}
+
+.profile-info {
+    font-size: 19px;
+    width: 700px;
+    text-align: left;
+    /* padding-left: 100px; */
+    word-wrap: normal;
+}
+
+.profile-info-p {
+    /* background-color: #0195b6; */
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+.socials img {
+    width: 64px;
+    height: auto;
+}
+.socials a {
+    text-decoration: none;
+}
+    .socials a:hover {
+        filter: brightness(0.5);
+        transition: .2s ease;
+    }
+
+
+.tech-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    gap: 30px;
+} 
+
+.tech-stack img {
+    width: 72px;
+    height: auto;
+}
+
+
+
+
+
+/* 770px */
+@media screen and (max-width: 770px) {
+
+    #gifs-back {
+        display: none;
+    }
+
+    .titlebar-left h1{
+        font-size: 25px !important; 
+    }
+
+    #thunder {
+        display: none;
+    }
+
+}
+
+
