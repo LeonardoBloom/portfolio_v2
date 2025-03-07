@@ -308,8 +308,8 @@ body {
         gap: 100px;
     }
     
-    #gifs-back-right {
-        display: none;
+    #gifs-back-right, #gifs-back {
+        
     }
     #gifs {
         
