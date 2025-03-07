@@ -309,7 +309,7 @@ body {
     }
     
     #gifs-back-right, #gifs-back {
-        
+        display: none;
     }
     #gifs {
         
