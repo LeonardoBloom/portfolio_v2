@@ -286,7 +286,35 @@ body {
 
     #gifs-back {
         position: absolute;
+        margin-top: 10px;
+        left: 100px;
+        height: auto;
+        width: auto;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    #gifs-back-right {
+        position: absolute;
+        margin-top: 10px;
+        right: 100px;
+        height: auto;
+        width: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    
+    #gifs-back-right {
+        display: none;
+    }
+    #gifs {
+        
+        height: auto;
+        width: 170px;
     }
 
     
