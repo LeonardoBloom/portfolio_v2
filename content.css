@@ -374,6 +374,7 @@
 
     
     background-color: #acacac;
+    color: black;
   }
   
   .w95-window-item img {
@@ -406,7 +407,7 @@
 
   .skills .w95-window-content, .tech .w95-window-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 160px);
+    grid-template-columns: repeat(auto-fill, 170px);
     text-align: left;
     gap: 10px
   }
@@ -531,7 +532,7 @@
 .gifs-in-grid {
   margin: auto;
   width: 350px !important;
-  height: auto;
+  height: auto !important;
 }
 .w95-window {
   position: relative;
@@ -600,6 +601,19 @@
 
 .profile-mobile, .mobile {
   display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .tech .w95-window-content, .skills .w95-window-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tech .w95-window-item, .skills .w95-window-item {
+    font-size: 18px;
+    font-weight: 800;
+    width: 300px !important;
+  }
 }
 
 /* 770px */
