@@ -740,8 +740,10 @@
 
     }
     .rainbow-strip-horizontal img {
-      
-      width: 100vh;
+      top: 0;
+      left: 0;
+        /* width: 1000px; */
+        min-width: 100vw;
       /* bottom: 0; */
       /* left: 0; */
       
@@ -751,16 +753,18 @@
       position: relative;
       width: 100vw;
       /* height: 200px; */
-      overflow: visible;
+      /* overflow: visible; */
     }
     .rainbow-separator img {
-      top:0;
-      left:-20px;
-      position: absolute;
-      width: 100vw;
-      max-width: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        /* width: 1000px; */
+        min-width: 100vw;
+        z-index: -1 !important;
     }
-
+   
     .tech-and-skills {
       margin-top: 120px;
       /* margin-bottom: 20px; */
