@@ -39,3 +39,7 @@
     font-family: "bubbled" ;
     src: url('./assets/fonts/Bumbbled.otf') format('opentype');
 }
+@font-face {
+    font-family: "digital" ;
+    src: url('./assets/fonts/digital7.ttf') format('truetype');
+}

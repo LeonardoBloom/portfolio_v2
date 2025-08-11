@@ -171,15 +171,30 @@
 }
 
 /* ******** BIO BIO BIO ********** */
-
-.bio-gif {
+.bio-gif, .tech-gif, .project-gif, .project-gif2 {
   position: absolute;
   width: 200px;
   height: auto;
+}
+.bio-gif {
   /* right: 325px; */
   right: 40px;
   bottom: 20px;
   z-index: -1;
+}
+.tech-gif {
+  /* right: 325px; */
+  left: 50px;
+  bottom: -350px;
+  z-index: 20;
+}
+.project-gif {
+  right: 50px;
+  top: 1200px;
+}
+.project-gif2 {
+  top: 1600px;
+  left: 60px;
 }
 
 .intro * {
@@ -240,6 +255,10 @@
 
 .profile-info-p {
     /* background-color: #0195b6; */
+}
+
+.profile-email a:hover {
+  color:red !important;
 }
 
 .socials {
