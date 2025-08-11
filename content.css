@@ -225,6 +225,8 @@
 .profile-pic {
     position: relative;
     z-index: 6;
+    
+    
 }
 .profile-pic #window {
     background-color: aliceblue;
@@ -234,6 +236,7 @@
     width: 300px;
     object-fit: contain;
     z-index: 5;
+    outline: 1px solid black !important;
 }
 
 .profile-pic #pfp {
@@ -241,6 +244,7 @@
     width: 370px;
     left: 10px;
     top: -30px;
+    /* outline: 2px solid black !important; */
 }
 
 .profile-info {
@@ -341,6 +345,8 @@
   border-left: 3px solid white;
   border-right: 3px solid #414141;
   border-bottom: 3px solid #414141;
+
+  outline: 1px solid black !important;
 }
   .w95-window-header {
     margin: 3px auto;
@@ -348,6 +354,7 @@
     background: url('assets/barbar4c.png');
     background-size: cover;
     margin-bottom: 20px;
+    outline: 1px solid black !important;
   }
     .project-name {
       margin: 5px 0;
@@ -375,6 +382,7 @@
     
     background-color: #acacac;
     color: black;
+    outline: 1px solid black;
   }
   
   .w95-window-item img {
@@ -436,10 +444,12 @@
   .w95-project {
     width: 360px;
     /* height: 400px; */
+    outline: 1px solid black !important;
   }
   .w95-project .w95-window-header {
     margin-bottom: 0 ;
     /* height: 50px; */
+    outline: 2px solid black !important;
   }
   .w95-project .w95-window-header h1 {
     font-size: 25px;
@@ -459,6 +469,8 @@
     border-right: 3px solid white;
     border-left: 3px solid #414141;
     border-top: 3px solid #414141;
+
+    outline: 1px solid black !important;
   }
   .w95-project:hover {
     border-bottom: 3px solid white;
