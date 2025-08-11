@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "W95FA";
+    src: url('./assets/fonts/W95FA.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "LineBeam" ;
+    src: url('./assets/fonts/Linebeam.ttf') format('truetype');
+}
+@font-face {
+    font-family: "EdunLine" ;
+    src: url('./assets/fonts/edunline.ttf') format('truetype');
+}
+@font-face {
+    font-family: "MIB" ;
+    src: url('./assets/fonts/MIB.ttf') format('truetype');
+}
+@font-face {
+    font-family: "vmonitor" ;
+    src: url('./assets/fonts/vmonitor.ttf') format('truetype');
+}
+@font-face {
+    font-family: "kamchatka" ;
+    src: url('./assets/fonts/kamchatka.ttf') format('truetype');
+}
+@font-face {
+    font-family: "aldo" ;
+    src: url('./assets/fonts/ALDO6.TTF') format('truetype');
+}
+@font-face {
+    font-family: "cursivestd" ;
+    src: url('./assets/fonts/Cursivestd.ttf') format('truetype');
+}
+@font-face {
+    font-family: "cursivestdBold" ;
+    src: url('./assets/fonts/CursivestdBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "bubbled" ;
+    src: url('./assets/fonts/Bumbbled.otf') format('opentype');
+}

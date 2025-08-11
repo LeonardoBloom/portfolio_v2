@@ -8,11 +8,13 @@
     <link rel="icon" href="assets/icon.png">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="fonts.css">
 
 </head>
 
 <body>
     <div class="one-big-div">
+        
         <div class="topbar">
             <div class="titlebar">
                 <div class="titlebar-left">
@@ -37,16 +39,18 @@
         </div>
 
         <div class="window-gap" style="background-color: #c0c4c8">
-            <div class="window-options">
-                <p><u>P</u>rojects</p>
-                <p><u>A</u>rt</p>
-                <p><u>F</u>ile</p>
-                <p><u>E</u>dit</p>
-                <p><u>S</u>earch</p>
-                <p><u>H</u>elp</p>
+            <div class="window-options-div" style="width: 90%; margin: auto 0;">
+                <div class="window-options">
+                    <p><u>P</u>rojects</p>
+                    <p><u>A</u>rt</p>
+                    <p><u>F</u>ile</p>
+                    <p><u>E</u>dit</p>
+                    <p><u>S</u>earch</p>
+                    <p><u>H</u>elp</p>
+                </div>
             </div>
 
-            <div class="animation-lever">
+            <div class="animation-lever no-show">
                 <label for="animation">
                     <input type="checkbox" onchange="bkg_autoplay()" name="animation" id="animation">
                     <span class="checkmark">
@@ -56,44 +60,85 @@
         </div>
         
         <div class="main-container">
-            <video id="bkg-video" playsinline autoplay muted loop src="./assets/Logoslide.mp4" >
+            <div class="rainbow-strip">
+                <img src="assets/png/rainbowstrip.png">
+            </div>
+            
+
+            <!-- ************ BACKGROUND *************** -->
+            <!-- <video id="bkg-video" playsinline autoplay muted loop src="./assets/Logoslide.mp4" ></video> -->
+            <!-- <div id="bkg-gif" style="background-image: url('./assets/gifs/stars.gif'); background-repeat: repeat;"></div> -->
+                    <!-- <img id="bkg-gif-inside" playsinline autoplay muted loop src="./assets/gifs/stars.gif" > -->
+            <!-- </div> -->
+
+            
                 
-            </video>
+            <!-- ***************** RANDOM GIFS ******************* -->
             <div class="content-wrapper intro-wrapper">
+
+                <img class="bio-gif gifs mobile-no-show" src="./assets/gifs/welcome.gif" alt="">
                 <div id="gifs-back">
-                    <img id="gifs" src="./assets/gifs/hello.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/welcome.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/floppy.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/cato.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/parrot.gif" alt="">
+                    <!-- <img id="gifs" src="./assets/gifs/hello.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/welcome.gif" alt=""> -->
+                    <img 
+                    style="filter: grayscale(1)"                    
+                    id="gifs" src="./assets/gifs/floppy.gif" alt="">
+                    <!-- <img id="gifs" src="./assets/gifs/cato.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/parrot.gif" alt=""> -->
 
                 </div>
                 <div id="gifs-back-right">
-                    <img id="gifs" src="./assets/gifs/hello.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/welcome.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/floppy.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/cato.gif" alt="">
-                    <img id="gifs" src="./assets/gifs/parrot.gif" alt="">
+                    <!-- <img id="gifs" src="./assets/gifs/hello.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/welcome.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/floppy.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/cato.gif" alt=""> -->
+                    <!-- <img id="gifs" src="./assets/gifs/parrot.gif" alt=""> -->
+
+                </div>
+                <div class="intro-text mobile">
+                    <div class="intro-greeting">
+                        <h3>Hi, I'm</h3>
+                        <h1 style="color: blue; font-family: 'EdunLine';">Leo.</h1>
+                    </div>
+                    <p style="font-family: 'bubbled';">I <span style="color: rgb(0, 121, 0)">code</span> and <span class="rainbow-anim">design</span> stuff.</p>
+
+                    <!-- <div class="socials"
+                        style="padding-top: 10px; margin: 0 auto;">
+                                            <a title="GitHub" href="https://github.com/LeonardoBloom">
+                                                <img src="./assets/socials/gh.png">
+                                            </a>
+                                            <a title="LinkedIn" href="https://www.linkedin.com/in/leonardocolaco/">
+                                                <img src="./assets/socials/li.png">
+                                            </a>
+                                            <a title="Resume" href="https://www.overleaf.com/read/btysgbtjsxwk#5f324d">
+                                                <img src="./assets/socials/resume.ico">
+                                            </a>
+                                            <a title="Spotify" href="https://open.spotify.com/user/leonardobloom">
+                                                <img src="./assets/socials/spoti.png">
+                                            </a>
+                                        </div> -->
 
                 </div>
                 <div class="content intro">
                     <!-- PAGE CONTENT GOES HERE-->
-
-                    <!-- <h1 style="text-align: left;"><u>Hi, I'm Leo :3</u></h1> -->
                     <div class="intro-profile">
                         <!-- <img src="./assets/pfp.png"> -->
                         <div class="hello">
-                            <div class="welcome"> 
-                                <img id="thunder" class="myGif" src="./assets/gifs/pc.gif">
-                                <img id="welcome-text" src="./assets/gifs/wel3.gif">
+                            <div class="welcome mobile-no-show"> 
+                                <img id="thunder" class="myGif" src="./assets/gifs/cursor.gif">
+                                <!-- <img id="welcome-text" src="./assets/gifs/wel3.gif"> -->
+                                <h1 class="page-welcome" id="welcome-title" style="font-size: 70px; font-weight: 500; ">Welcome</h1>
                                 <img id="thunder" class="myGif" src="./assets/gifs/pc.gif">
                                 
                             </div>
                             
-                            <div class="div-split"></div>
+                            <!-- <div class="div-split  mobile-no-show"></div> -->
 
-
+                            <!-- BIO BIO BIO BIO BIO -->
                             <div class="profile">
+                                <div class="rainbow-strip-horizontal" style="z-index: 0;">
+                                    <img src="assets/png/rainbowstrip_horizontal.png">
+                                </div>
                                 <div class="profile-pic">
                                     <img id="window" src="./assets/window_px.png">
                                     <!-- <img id="pfp" src="./assets/pfp.png"> -->
@@ -104,16 +149,19 @@
                                     </div>
                                 </div>
                                 <div class="profile-info">
-                                    <u><h1>Hi, I'm <span style="color: blue;">Leo.</span></h1></u>
+                                    
+                                    <h1 style="font-family: 'EdunLine'; margin-top: 0; ">Hi, I'm <span style="color: blue; font-family: 'EdunLine'; font-weight: 300;">Leo.</span> </h1>
+
                                     <div class="profile-info-p">
-                                        <p>I code and design stuff.</p>
-                                        <p>I'm a programmer from <a style="color: black; cursor: pointer;" href="https://en.wikipedia.org/wiki/Mozambique"><b><u>Mozambique</u></b></a> with a passion for computers and 
+                                        <p style="font-family: 'bubbled';">I <span style="color: rgb(0, 121, 0)">code</span> and <span class="rainbow-anim">design</span> stuff.</p>
+                                        <p style="font-family: ; font-weight: ;">I'm a programmer from <a style="color: black; cursor: pointer;" href="https://en.wikipedia.org/wiki/Mozambique"><b><u>Mozambique</u></b></a> with a passion for computers and 
                                             building things on the internet. I hope to make use of my creativity to 
-                                            make cool stuff alongside other cool programmers!! :D</p>
+                                            make cool stuff alongside other cool programmers!! :)</p>
+                                        
                                         <p>When I'm AFK I like to play the guitar, learn cooking recipes and read 
                                             philosophy books. (O.O)</p>
                                     </div>
-                                    <br>
+                                    
                                     <div class="socials">
                                         <a title="GitHub" href="https://github.com/LeonardoBloom">
                                             <img src="./assets/socials/gh.png">
@@ -130,116 +178,278 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="div-split"></div>
 
-                            <div class="tech">
-                                <!-- <img id="technologies-text" src="./assets/gifs/tech.gif"> -->
-                                 <h1>Tech Stack:</h1>
-                                <div class="tech-stack">
-
-                                    <div title="Python" class="tech-stack-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                            <div class="rainbow-strip-horizontal mobile">
+                                <img src="assets/png/rainbowstrip_horizontal.png">
+                            </div>
+                            <div class="profile profile-mobile">
+                                    <div class="profile-pic">
+                                        <img id="window" src="./assets/window_px.png">
+                                        <!-- <img id="pfp" src="./assets/pfp.png"> -->
+                                        <div class="profile-basic">
+                                            <h3>Leonardo Colaço</h3>
+                                            <h3 style="font-weight: 100;">Computer Engineer</h3>
+                                            <h3  style="font-weight: 100;"><a href="mailto:leonardocolacogg@gmail.com">leonardocolacogg@gmail.com</a></h3>
+                                        </div>
                                     </div>
+                                    <div class="profile-info">
+                                        <img class="bio-gif gifs" src="./assets/gifs/welcome.gif" alt="">
+                                        <!-- <h1 style="font-family: 'EdunLine' ">Hi, I'm <span style="color: blue; font-family: 'EdunLine'; font-weight: 300;">Leo.</span> </h1> -->
 
-                                    <div title="Javascript" class="tech-stack-icon">
-
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                        <div class="profile-info-p">
+                                            <!-- <p>I code and design stuff.</p> -->
+                                            <p>I'm a programmer from <a style="color: black; cursor: pointer;" href="https://en.wikipedia.org/wiki/Mozambique"><b><u>Mozambique</u></b></a> with a passion for computers and 
+                                                building things on the internet. I hope to make use of my creativity to 
+                                                make cool stuff alongside other cool programmers!! :D</p>
+                                            <p>I'm a huge enjoyer of music, especially rock and indie genres. Some other art I admire are video games and drawing, which I keep up with daily.</p>
+                                            <p>When I'm AFK I like to play the guitar, learn cooking recipes and read 
+                                                philosophy books. (O.O)</p>
+                                        </div>
+                                        <br>
+                                        <div class="socials">
+                                            <a title="GitHub" href="https://github.com/LeonardoBloom">
+                                                <img src="./assets/socials/gh.png">
+                                            </a>
+                                            <a title="LinkedIn" href="https://www.linkedin.com/in/leonardocolaco/">
+                                                <img src="./assets/socials/li.png">
+                                            </a>
+                                            <a title="Resume" href="https://www.overleaf.com/read/btysgbtjsxwk#5f324d">
+                                                <img src="./assets/socials/resume.ico">
+                                            </a>
+                                            <a title="Spotify" href="https://open.spotify.com/user/leonardobloom">
+                                                <img src="./assets/socials/spoti.png">
+                                            </a>
+                                        </div>
                                     </div>
-
-                                    <div title="React" class="tech-stack-icon"> 
-                                        <img  style="background-color: #84888c;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                                    </div>
-
-                                    <div title="Express.js" class="tech-stack-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
-                                    </div>
-
-                                    <div title="Nodejs" class="tech-stack-icon"> 
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-                                    </div>
-
-                                    <div title="Jetbrains IDE" class="tech-stack-icon"> 
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
-                                    </div>
-
-                                    <div title="Linux" class="tech-stack-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-                                    </div>
-
-                                    <div title="MySql" class="tech-stack-icon"> 
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                                    </div>
-                                
-                                    <div title="Figma" class="tech-stack-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                                    </div>
-                                    
-                                    <!-- <div title="" class="tech-stack-icon"> 
-
-                                    </div> -->
                                 </div>
+                            
+                            <!-- <div class="div-split"></div> -->
+
+                            <div class="rainbow-separator mobile">
+                                <img src="assets/png/rainbowstrip_horizontal.png">
                             </div>
 
-                            <div class="div-split"></div>
                             
-                            <div class="projects">
-                                <!-- <img id="project-text" src="./assets/projects/proj.gif"> -->
-                                 <h1>Featured Projects:</h1>
-                                <div class="project-grid">
-                                    
-                                    <a href="#">
-                                        <div class="card-container">
-                                            <!-- <div class="card-ghost"></div> -->
-                                            <img class="card-actual card-1" src="assets/window.png">
-                                            <!-- <div class="card-actual">
-                                            </div> -->
-                                            <h1>Image Processor with Content-Aware Resizing</h1>
-                                            <p>✶ Python, OpenCV</p>
-                                          </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="card-container">
-                                            <!-- <div class="card-ghost"></div> -->
-                                            <img class="card-actual card-2" src="assets/window.png">
-                                            <!-- <div class="card-actual">
-                                            </div> -->
-                                            <h1>Warehouse Logistics Management (Mobile App POC)</h1>
-                                            <p>✹ Javascript, React Native, MySQL</p>
+                            <div class="tech-and-skills">
+                                <div class="tech w95-window">
+                                    <div class="rainbow-strip-w95">
+                                        <img src="assets/png/rainbowstrip.png">
+                                    </div>
+                                    <!-- <img id="technologies-text" src="./assets/gifs/tech.gif"> -->
+                                    <div class="section-title w95-window-header">
+                                        <img src="assets/png/stack-icon.png">
+                                        <h1>Tech Stack :</h1>
+                                    </div>
+    
+                                    <div class="tech-stack w95-window-content">
+    
+                                        <div title="Python" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/png/python-icon.png" />
+                                            <p>Python</p>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="card-container">
-                                            <!-- <div class="card-ghost"></div> -->
-                                            <img class="card-actual card-3" src="assets/window.png">
-                                            <!-- <div class="card-actual">
-                                            </div> -->
-                                            <h1>Lexical Analyzer</h1>
-                                            <p>✦ Python</p>
-                                          </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="card-container">
-                                            <!-- <div class="card-ghost"></div> -->
-                                            <img class="card-actual card-4" src="assets/window.png">
-                                            <!-- <div class="card-actual"> 
-                                            </div> -->
-
-                                            <h1>Messaging Web App</h1>
-                                            <p>★ Javascript, MERN Stack</p>
-                                          </div>
-                                    </a>
-
-
+    
+                                        <div title="Javascript" class="tech-stack-icon w95-window-item">
+    
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                            <p>Javascript</p>
+                                        </div>
+    
+                                        <div title="React" class="tech-stack-icon w95-window-item"> 
+                                            <img  style="background-color: #84888c;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                                            <p>React</p>
+                                        </div>
+    
+    
+                                        <div title="Nodejs" class="tech-stack-icon w95-window-item"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                                            <p>node.js</p>
+                                        </div>
+    
+                                        <div title="Jetbrains IDE" class="tech-stack-icon w95-window-item"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
+                                            <p>Jetbrains</p>
+                                        </div>
+    
+                                        <div title="Linux" class="tech-stack-icon w95-window-item">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                                            <p>Linux</p>
+                                        </div>
+    
+                                        <div title="MySql" class="tech-stack-icon w95-window-item"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                            <p>MySQL</p>
+                                        </div>
+                                    
+                                        <div title="Figma" class="tech-stack-icon w95-window-item">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                                            <p>Figma</p>
+                                        </div>
+                                        
+                                        <!-- <div title="" class="tech-stack-icon"> 
+    
+                                        </div> -->
+                                    </div>
                                 </div>
-                                <div class="other-projects">
+                                <div class="skills w95-window">
+                                    <div class="rainbow-strip-w95">
+                                        <img src="assets/png/rainbowstrip.png">
+                                    </div>
+                                    <div class="section-title w95-window-header" style="filter:hue-rotate(99deg); ">
+                                        <img src="assets/png/skills2.png">
+                                        <h1>Skills :</h1>
+                                    </div>
 
+                                    <div class="w95-window-content">
+                                        <div title="Frontend Development" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/frontend.ico" />
+                                            <p>Frontend Development</p>
+                                        </div>
+                                        <div title="Fullstack Development" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/fullstack.ico" />
+                                            <p>Fullstack Development</p>
+                                        </div>
+                                        <div title="Software Development" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/software.ico" />
+                                            <p>Software Development</p>
+                                        </div>
+                                        <div title="Web Development" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/web1.ico" />
+                                            <p>Web Development</p>
+                                        </div>
+                                        <div title="APIs" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/apis.ico" />
+                                            <p>APIs</p>
+                                        </div>
+                                        <div title="Graphic Design" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/Paintbrish.ico" />
+                                            <p>Graphic Design</p>
+                                        </div>
+                                        <div title="Video Editing" class="tech-stack-icon w95-window-item">
+                                            <img src="/assets/tech/video2.ico" />
+                                            <p>Video Editing</p>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <p style="margin-top: -2rem; font-size: 20px ;">
-                                        <a href='' style="text-decoration: underline;">
-                                        More Projects...
-                                        </a>
-                                    </p>
+
+                            </div>
+
+                            
+
+                            <!-- <div class="div-split"></div> -->
+                            
+                            <div class="projects w95-window" style="position: relative;">
+                                <!-- <img id="project-text" src="./assets/projects/proj.gif"> -->
+                                 <div class="section-title w95-window-header" 
+                                    style="
+                                        filter:hue-rotate(270deg); 
+                                        position: relative;
+                                        
+                                        ">
+                                    <img src="assets/tech/Mystify.ico">
+                                    <h1 style="font-weight: 500;">My projects :</h1>
+
+                                    
+
+
+                                    
+                                </div>
+                                <div class="project-grid w95-window-content">
+
+                                        
+                                    
+                                    
+                                        <div class="w95-window w95-project" 
+                                                style="justify-content: space-between !important;">
+                                            <a href="#">
+                                                <div class="section-title w95-window-header" style="">
+                                                    <!-- <img src="assets/tech/Mystify.ico"> -->
+                                                    <h1 class="project-name" style="font-weight: 500; word-wrap: normal;">Image Processor With Conent-Aware Resizing</h1> 
+                                                </div>
+                                                <div class="w95-window-item">
+                                                    <img src="assets/projects/1.png">
+                                                </div>
+                                            
+                                                <!-- <div class="card-ghost"></div> -->
+                                                
+                                                <!-- <div class="card-actual">
+                                                </div> -->
+                                                <div class="project-description">
+                                                    <p>✶ Python, OpenCV</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="w95-window w95-project">
+                                            <a href="#">
+                                                <div class="section-title w95-window-header" style="">
+                                                    <!-- <img src="assets/tech/Mystify.ico"> -->
+                                                    <h1 class="project-name" style="font-weight: 500; word-wrap: normal;">Warehouse Logistics Management App</h1> 
+                                                </div>
+                                                <div class="w95-window-item">
+                                                    <img src="assets/projects/1.png">
+                                                </div>
+                                            
+                                                <!-- <div class="card-ghost"></div> -->
+                                                
+                                                <!-- <div class="card-actual">
+                                                </div> -->
+                                                <div class="project-description">
+                                                    <p>✶ Python, OpenCV</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="w95-window w95-project">
+                                            <a href="#">
+                                                <div class="section-title w95-window-header" style="">
+                                                    <!-- <img src="assets/tech/Mystify.ico"> -->
+                                                    <h1 class="project-name" style="font-weight: 500; word-wrap: normal;">Image Processor With Conent-Aware Resizing</h1> 
+                                                </div>
+                                                <div class="w95-window-item">
+                                                    <img src="assets/projects/1.png">
+                                                </div>
+                                            
+                                                <!-- <div class="card-ghost"></div> -->
+                                                
+                                                <!-- <div class="card-actual">
+                                                </div> -->
+                                                <div class="project-description">
+                                                    <p>✶ Python, OpenCV</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="w95-window w95-project">
+                                            <a href="#">
+                                                <div class="section-title w95-window-header" style="">
+                                                    <!-- <img src="assets/tech/Mystify.ico"> -->
+                                                    <h1 class="project-name" style="font-weight: 500; word-wrap: normal;">Image Processor With Conent-Aware Resizing</h1> 
+                                                </div>
+                                                <div class="w95-window-item">
+                                                    <img src="assets/projects/1.png">
+                                                </div>
+                                            
+                                                <!-- <div class="card-ghost"></div> -->
+                                                
+                                                <!-- <div class="card-actual">
+                                                </div> -->
+                                                <div class="project-description">
+                                                    <p>✶ Python, OpenCV</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <p style=" font-size: 20px ;">
+                                                <a href='' style="z-index: 10;text-decoration: underline;">
+                                                More Projects...
+                                                </a>
+                                            </p>
+
+                                        <div class="rainbow-strip-w95">
+                                            <img style="width: 600px;" src="assets/png/rainbowstrip.png">
+                                        </div>
+                                </div>
+                                <!-- <div class="other-projects">
+
+                                </div> -->
                             </div>
 
                         </div>

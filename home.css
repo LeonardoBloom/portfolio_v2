@@ -1,7 +1,6 @@
-@font-face {
-    font-family: "W95FA";
-    src: url('./assets/fonts/W95FA.otf')
-}
+
+
+
 
 html {
     /* height: 100vw; */
@@ -22,6 +21,7 @@ body {
     /* z-index: s; */
 
     height: 100%;
+    background-color: #c0c4c8;
 }
 
 
@@ -29,6 +29,7 @@ body {
 ::-webkit-scrollbar {
     width: 24px; /* Width of the scrollbar */
     height: 10px;
+    z-index: 99;
     
     /* border: 2px solid #84888c; */
     border-top: 2px solid #000000;
@@ -47,6 +48,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 20px;
+    z-index: 99;
     
     /* object-fit: fill; */
     border-radius: 1px;
@@ -62,7 +64,8 @@ body {
 /* Style the scrollbar track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
     margin-left: 10px;
-    border-right: px solid #000000;
+    border-right: 1px solid #000000;
+    z-index: 99;
     
 }
 
@@ -96,13 +99,15 @@ body {
     background-color: #555;
 }
 
-
+/* BACKGROUND TINT HERE */
 .one-big-div {
     display: flex;
     flex-direction: column;
     gap: 0;
     height: 100vh;
-    background-color: #c0c4c8;
+
+    /* background-color: #0f0f0f; */
+    
     
 }
 
@@ -194,16 +199,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 99%;
+    width: 100%;
     align-items: center;
 }
 
 .window-options {
     display: flex;
     flex-direction: row;
+    
     margin: auto;
     /* gap: 8px; */
     width: 100%;
+    padding: 0 5px;
 }
 
 .window-options p {
@@ -239,6 +246,8 @@ body {
         flex: 1;
         z-index: 9;
 
+        background-color: #C4C0AA;
+
         border-top: 2px solid #000000 ;
         border-left: 2px solid #000000 ;
         /* border-bottom: 2px solid #000000; */
@@ -265,7 +274,9 @@ body {
     height: 100%;
     z-index: -1 !important;
     object-fit: cover;
-    opacity: 0.04;
+    opacity: 0.5;
+    /* opacity: 1; */
+    /* filter:saturate(0.5) ; */
     }
 
     .content-wrapper {
@@ -274,14 +285,31 @@ body {
         width: 100%;
         height: 100%; /* Make sure it takes full height */
         overflow-y: scroll; /* Enable vertical scrolling */
+        overflow-x: hidden;
         max-width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
         box-sizing: border-box; /* Makes sure padding is included in height */
     }
+    .main-container #bkg-gif {
+        position: absolute;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    width: 100%;
+    height: 100%;
+    z-index: -1 !important;
+    /* object-fit:contain; */
+    opacity: 0.8;
+    /* opacity: 1; */
+    /* filter:saturate(0.5) ; */
+    }
+
 
     .intro-wrapper {
 
+    }
+
+    .no-show {
+        display: none;
     }
 
     #gifs-back {
@@ -309,7 +337,7 @@ body {
     }
     
     #gifs-back-right, #gifs-back {
-        display: none;
+        /* display: none; */
     }
     #gifs {
         
