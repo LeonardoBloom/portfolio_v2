@@ -705,6 +705,13 @@
     width: 100% !important;
   }
 
+  .w95-project .w95-window-header {
+    
+    min-height: 58px;
+    max-height: 72px;
+    
+  }
+
 
   .mobile-no-show {
     display: none;
