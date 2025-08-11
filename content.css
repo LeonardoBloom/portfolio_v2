@@ -214,6 +214,8 @@
 .profile {
     width: var(--maximum-w);
     margin: 40px auto;
+    /* margin-bottom: 50px !important; */
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     /* gap: 100px; */
@@ -390,7 +392,7 @@
     height:35px;
     /* outline: 2px solid black; */
     /* border: 2px solid black; */
-    border-radius: 7px;
+    /* border-radius: 7px; */
     user-select: none;
   }
   .w95-window-item p {
@@ -443,25 +445,28 @@
   
   .w95-project {
     width: 360px;
-    /* height: 400px; */
+    height: 330px;
     outline: 1px solid black !important;
+  }
+  .w95-window .w95-project {
+
   }
   .w95-project .w95-window-header {
     margin-bottom: 0 ;
-    /* height: 50px; */
+    height: 58px;
     outline: 2px solid black !important;
   }
   .w95-project .w95-window-header h1 {
     font-size: 25px;
   }
   .w95-project .w95-window-item {
-    margin: 5px auto;
-    width: 98%;
+    margin: 10px auto;
+    width: 340px !important;
+    height: 200px;
 
     display: block;
     padding: 0px;
     gap: 0px;
-    height: auto;
 
 
 
@@ -477,16 +482,17 @@
     border-right: 3px solid white;
     border-left: 3px solid #414141;
     border-top: 3px solid #414141;
-
+    
     background-color: #acacac;
-
+    
     /* transition: all 0.05s ease-in-out; */
   }
-
-
+  
+  
   .w95-project .w95-window-item img {
+    object-fit: cover;
     width:100%;
-    height: auto;
+    height: 100%;
     /* outline: 2px solid black; */
     /* border: 2px solid black; */
     border-radius: 0px;
@@ -541,6 +547,50 @@
 
 
 /* ************* PROJECT CARDS ******** */  
+
+.projects .more-projects {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  /* height: 100%; */
+  text-decoration: none;
+}
+.w95-button {
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    /* margin: 10px auto; */
+    margin-bottom: 20px !important;
+    padding: 10px;
+    height: 45px;
+    /* width: 150px; */
+    /* font-size: 16px; */
+
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid #414141;
+    border-bottom: 3px solid #414141;
+
+    background-color: #acacac;
+    color: black;
+    outline: 1px solid black;
+}
+.w95-button:active {
+  border-bottom: 3px solid #d6d6d6;
+    border-right: 3px solid #d6d6d6;
+    border-left: 3px solid #414141;
+    border-top: 3px solid #414141;
+    
+    background-color: #808080;
+    text-decoration: underline;
+    color: #fffcee;
+}
+.w95-button:hover {
+  background-color: #969696;
+}
+
+
+
 .gifs-in-grid {
   margin: auto;
   width: 350px !important;
@@ -614,6 +664,10 @@
 .profile-mobile, .mobile {
   display: none;
 }
+
+
+
+
 
 @media screen and (max-width: 425px) {
   .tech .w95-window-content, .skills .w95-window-content {
